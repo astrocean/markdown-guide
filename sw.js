@@ -8,7 +8,7 @@ console.log("installing service worker");
 
 const filesToCache = [
   "/",
-  "/index.html"
+  "/index.html",
   "/about/",
   "/getting-started/",
   "/cheat-sheet/",
