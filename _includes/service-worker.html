@@ -14,9 +14,6 @@ if (navigator.serviceWorker) {
           if (worker.state == 'installed') {
               console.log('[*] Install successful!');
           }
-          if (worker.state == 'activated' && !navigator.serviceWorker.controller) {
-            showOfflineToast();
-          }
       });
   });
 }
