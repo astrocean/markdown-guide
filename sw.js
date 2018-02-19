@@ -15,29 +15,7 @@ const filesToCache = [
   "/basic-syntax/",
   "/extended-syntax",
   "/api/v1/",
-  "/favicon.ico",
-  "/assets/images/atom.png",
-  "/assets/images/dillinger.png",
-  "/assets/images/markdown-mark-white.svg",
-  "/assets/images/markdown-mark.svg",
-  "/assets/images/philly-magic-garden.jpg",
-  "/assets/images/process.png",
-  "/assets/images/shiprock.jpg",
-  "/assets/images/tasklist.png",
-  "/assets/images/tux.png",
-  "/assets/css/bootstrap-toc.min.css",
-  "/assets/css/bootstrap.min.css",
-  "/assets/css/bootstrap.min.css.map",
-  "/assets/css/font-awesome.min.css",
-  "/assets/css/homepage.css",
-  "/assets/css/open-sans.css",
-  "/assets/css/page.css",
-  "/assets/css/search.css",
-  "/assets/css/syntax.css",
-  "/assets/javascript/anchor.js",
-  "/assets/javascript/boostrap-toc.min.js",
-  "/assets/javascript/bootstrap.min.js",
-  "/assets/javascript/jquery-1.12.4.min.js"
+  "/favicon.ico"
 ];
 
 self.addEventListener("install", function(e){
@@ -49,7 +27,7 @@ self.addEventListener("install", function(e){
     })
   )
 });
- 
+
 self.addEventListener("activate", function(e){
   e.waitUntil(
     caches.keys().then(function(cacheNames){
