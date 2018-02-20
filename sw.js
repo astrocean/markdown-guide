@@ -8,14 +8,9 @@ console.log("installing service worker");
 
 const filesToCache = [
   "/",
-  "/index.html",
-  "/about/",
-  "/getting-started/",
-  "/cheat-sheet/",
-  "/basic-syntax/",
-  "/extended-syntax",
-  "/api/v1/",
-  "/favicon.ico"
+  {% for page in site.html_pages %}
+    '{{ page.url }}',
+  {% endfor %}
 ];
 
 self.addEventListener("install", function(e){
