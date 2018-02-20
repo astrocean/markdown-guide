@@ -11,7 +11,7 @@ const filesToCache = [
     '{{ page.url }}',
   {% endfor %}
   {% for file in site.static_files %}
-    '{{ file.path }}',
+    '{{ file.path }}', 
   {% endfor %}
 ];
 
