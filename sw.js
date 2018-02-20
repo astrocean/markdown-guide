@@ -10,6 +10,9 @@ const filesToCache = [
   {% for page in site.html_pages %}
     '{{ page.url }}',
   {% endfor %}
+  {% for file in site.static_files %}
+    '{{ file.path }}',
+  {% endfor %}
 ];
 
 self.addEventListener("install", function(e){
