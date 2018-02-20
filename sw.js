@@ -8,7 +8,7 @@ console.log("installing service worker");
 
 const filesToCache = [
   "/",
-  {% for page in site.html_pages %}
+  {% for page in site.pages %}
     '{{ page.url }}',
   {% endfor %}
 ];
