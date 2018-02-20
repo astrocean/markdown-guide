@@ -7,10 +7,10 @@ const staticCacheName = "markdown-guide-v1";
 console.log("installing service worker");
 
 const filesToCache = [
-  "/",
   {% for page in site.pages %}
     '{{ page.url }}',
   {% endfor %}
+  "/"
 ];
 
 self.addEventListener("install", function(e){
